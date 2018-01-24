@@ -382,4 +382,9 @@ public class BookDetailActivity extends BaseHeaderActivity<HeaderBookDetailBindi
                 Log.i(TAG, "onADOpenOverlay");
         }
 
+        @Override
+        public void onADCloseOverlay(NativeExpressADView nativeExpressADView) {
+
+        }
+
 }

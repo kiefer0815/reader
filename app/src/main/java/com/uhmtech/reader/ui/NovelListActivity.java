@@ -264,4 +264,9 @@ public class NovelListActivity  extends BaseDataBindingActivity<ActivityNovelLis
         public void onADOpenOverlay(NativeExpressADView adView) {
                 Log.i(TAG, "onADOpenOverlay: " + adView.toString());
         }
+
+        @Override
+        public void onADCloseOverlay(NativeExpressADView nativeExpressADView) {
+                
+        }
 }

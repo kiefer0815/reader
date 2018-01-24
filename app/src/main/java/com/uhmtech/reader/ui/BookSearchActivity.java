@@ -259,4 +259,9 @@ public class BookSearchActivity  extends BaseDataBindingActivity<ActivitySearchB
                 Log.i(TAG, "onADOpenOverlay: " + adView.toString());
         }
 
+        @Override
+        public void onADCloseOverlay(NativeExpressADView nativeExpressADView) {
+
+        }
+
 }

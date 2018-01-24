@@ -305,4 +305,9 @@ public class WelfareFragment extends BaseDataBindingFragment<FragmentWelfareBind
     public void onADOpenOverlay(NativeExpressADView adView) {
         Log.i(TAG, "onADOpenOverlay: " + adView.toString());
     }
+
+    @Override
+    public void onADCloseOverlay(NativeExpressADView nativeExpressADView) {
+
+    }
 }

@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
+import com.qq.e.ads.cfg.VideoOption;
 import com.qq.e.ads.nativ.ADSize;
 import com.qq.e.ads.nativ.NativeExpressAD;
 import com.qq.e.ads.nativ.NativeExpressADView;
@@ -39,6 +40,10 @@ public class NavDownloadActivity extends BaseDataBindingActivity<ActivityNavDown
         final float density = getResources().getDisplayMetrics().density;
         ADSize adSize = new ADSize((int) (getResources().getDisplayMetrics().widthPixels / density), 130); // 不支持MATCH_PARENT or WRAP_CONTENT，必须传入实际的宽高
         nativeExpressAD = new NativeExpressAD(this, adSize, Constants.APPID, Constants.NativeExpressPosID2, this);
+        nativeExpressAD.setVideoOption(new VideoOption.Builder()
+                .setAutoPlayPolicy(VideoOption.AutoPlayPolicy.WIFI) // 设置什么网络环境下可以自动播放视频
+                .setAutoPlayMuted(true) // 设置自动播放视频时，是否静音
+                .build()); // setVideoOption是可选的，开发者可根据需要选择是否配置
         nativeExpressAD.loadAD(1);
     }
 
@@ -138,6 +143,11 @@ public class NavDownloadActivity extends BaseDataBindingActivity<ActivityNavDown
     @Override
     public void onADOpenOverlay(NativeExpressADView adView) {
         Log.i(TAG, "onADOpenOverlay");
+    }
+
+    @Override
+    public void onADCloseOverlay(NativeExpressADView nativeExpressADView) {
+
     }
 
 }

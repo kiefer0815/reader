@@ -317,4 +317,9 @@ public class BookCustomFragment extends BaseDataBindingFragment<FragmentBookCust
                 Log.i(TAG, "onADOpenOverlay: " + adView.toString());
         }
 
+        @Override
+        public void onADCloseOverlay(NativeExpressADView nativeExpressADView) {
+
+        }
+
 }
