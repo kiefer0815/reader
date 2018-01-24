@@ -283,7 +283,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="16dp"
-                        android:text="关于老司机"
+                        android:text="关于电子书阅读器"
                         android:textColor="@color/colorContent"
                         android:textSize="15sp" />
 

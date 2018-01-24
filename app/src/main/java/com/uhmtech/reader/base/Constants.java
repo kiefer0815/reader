@@ -12,7 +12,7 @@ public class Constants {
         public static final String SplashPosID = "4070126379380842";
         public static final String BannerPosID = "7050026339797008";
         public static final String InterteristalPosID = "1020724609331781";
-        public static final String NativeExpressPosID = "1040225669036669";
+        public static final String NativeExpressPosID = "7030621988160552";
         public static final String NativeExpressPosID2 = "4030527978058462";
         public static final String DEFAULT_DOMAIN_NAME = "";
         public static final String DEFAULT_DOWNLOAD_URL = "";

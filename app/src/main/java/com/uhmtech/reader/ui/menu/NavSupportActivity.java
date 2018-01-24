@@ -24,7 +24,7 @@ public class NavSupportActivity extends BaseDataBindingActivity<ActivityNavAbout
                 super.onCreate(savedInstanceState);
                 setContentView(R.layout.activity_nav_about);
                 showContentView();
-                setTitle("关于老司机");
+                setTitle("关于电子书阅读器");
                 bindingView.tvVersionName.setText("当前版本 V" + CommonUtils.getVersionCode(AppContext.applicationContext));
 
                 // 直接写在布局文件里会很耗内存

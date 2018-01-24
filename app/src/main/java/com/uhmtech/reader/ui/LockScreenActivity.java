@@ -15,7 +15,7 @@ import com.qq.e.ads.banner.ADSize;
 import com.qq.e.ads.banner.AbstractBannerADListener;
 import com.qq.e.ads.banner.BannerView;
 import com.qq.e.comm.util.AdError;
-import com.uhmtech.reader.HorizontalNtbActivity;
+import com.uhmtech.reader.MainActivity;
 import com.uhmtech.reader.R;
 import com.uhmtech.reader.UserManager;
 import com.uhmtech.reader.base.BaseActivity;
@@ -137,7 +137,7 @@ public class LockScreenActivity extends BaseActivity{
                                 if(TextUtils.isEmpty(localPwd)){
                                         UserManager.setExtraInfo(Constants.LOCK_SCREEN_STRING,pwd);
                                 }else if(localPwd.equals(pwd)){
-                                     if(mType.equals("2")) HorizontalNtbActivity.start(LockScreenActivity.this);
+                                     if(mType.equals("2")) MainActivity.start(LockScreenActivity.this);
                                      finish();
                                 }else {
                                         UIUtils.makeToast(LockScreenActivity.this,"密码错误，请重新输入");
